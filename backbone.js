@@ -27,10 +27,11 @@ function UpdateDocument(){
 function PlayRandomSound() {
     const Int = Math.round(RandomDec(1,8));
     let sound = new Audio("Sounds/MeowNormal" + Int + ".mp3");
-    sound.playbackRate = RandomDec(0.8,1);
+    sound.playbackRate = RandomDec(0.8,1.4);
     sound.play();
     Meows++;
     UpdateDocument()
 }
+
 
 UpdateDocument()
